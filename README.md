@@ -1,63 +1,63 @@
-# Oracle Cloud Infrastructure (OCI) Foundations
+# Fundamentos da Oracle Cloud Infrastructure (OCI)
 
-Note-taking repository for Oracle Cloud Infrastructure (OCI) foundations.
+Repositório de anotações para os fundamentos da Oracle Cloud Infrastructure (OCI).
 
-OCI Introduction
+## Introdução ao OCI
 
-- [OCI Platform](/docs/oci_platform.md)
-- [OCI Architecture](/docs/oci_architecture.md)
-- [Distributed Cloud](/docs/distributed_cloud.md)
+- [Plataforma OCI](/docs/oci_platform.md)
+- [Arquitetura OCI](/docs/oci_architecture.md)
+- [Nuvem Distribuída](/docs/distributed_cloud.md)
 
-Identity and Access Management (IAM)
+## Gerenciamento de Identidade e Acesso (IAM)
 
-- [IAM Introduction](/docs/iam_introduction.md)
-- [Compartments](/docs/compartments.md)
-- [AuthN & AuthZ](/docs/authn_and_authz.md)
-- [Tenancy Setup](/docs/tenancy_setup.md)
+- [Introdução ao IAM](/docs/iam_introduction.md)
+- [Compartimentos](/docs/compartments.md)
+- [AuthN & AuthZ (Autenticação e Autorização)](/docs/authn_and_authz.md)
+- [Configuração de Tenancy](/docs/tenancy_setup.md)
 
-Networking
+## Redes
 
-- [Virtual Cloud Network](/docs/virtual_cloud_network.md)
-- [VCN Routing](/docs/vcn_routing.md)
-- [VCN Security](/docs/vcn_security.md)
-- [Load Balancer](/docs/load_balancer.md)
+- [Rede Virtual em Nuvem (VCN)](/docs/virtual_cloud_network.md)
+- [Roteamento da VCN](/docs/vcn_routing.md)
+- [Segurança da VCN](/docs/vcn_security.md)
+- [Balanceador de Carga](/docs/load_balancer.md)
 
-Compute
+## Computação
 
-- [Compute Introduction](/docs/compute_introduction.md)
-- [Instance Basics](/docs/instance_basics.md)
+- [Introdução à Computação](/docs/compute_introduction.md)
+- [Noções Básicas de Instâncias](/docs/instance_basics.md)
 - [Cloud Shell](/docs/cloud_shell.md)
-- [Scaling](/docs/scaling.md)
-- [Container Engine for Kubernetes (OKE)](/docs/oke.md)
-- [Container Instances](/docs/container_instances.md)
-- [Oracle Functions](/docs/oracle_functions.md)
+- [Escalonamento](/docs/scaling.md)
+- [Container Engine para Kubernetes (OKE)](/docs/oke.md)
+- [Instâncias de Contêiner](/docs/container_instances.md)
+- [Funções Oracle](/docs/oracle_functions.md)
 
-Storage
+## Armazenamento
 
-- [Storage Introduction](/docs/storage_introduction.md)
-- [Block Volume](/docs/block_volume.md)
-- [File Storage](/docs/file_storage.md)
-- [Object Storage](/docs/object_storage.md)
+- [Introdução ao Armazenamento](/docs/storage_introduction.md)
+- [Volume em Bloco](/docs/block_volume.md)
+- [Armazenamento de Arquivos](/docs/file_storage.md)
+- [Armazenamento de Objetos](/docs/object_storage.md)
 
-Database
+## Banco de Dados
 
-- [Database Introduction](/docs/database_introduction.md)
-- [Autonomous Database](/docs/autonomous_database.md)
+- [Introdução ao Banco de Dados](/docs/database_introduction.md)
+- [Banco de Dados Autônomo](/docs/autonomous_database.md)
 - [Oracle MySQL](/docs/oracle_mysql.md)
 - [NoSQL](/docs/oracle_nosql.md)
 
-Security
+## Segurança
 
-- [Security Introduction](/docs/security_introduction.md)
+- [Introdução à Segurança](/docs/security_introduction.md)
 - [Cloud Guard](/docs/cloud_guard.md)
-- [Security Zones & Security Advisor](/docs/security_zones_and_advisor.md)
-- [Encryption Basics](/docs/encryption_basics.md)
-- [Vault](/docs/vault.md)
+- [Zonas de Segurança e Consultor de Segurança](/docs/security_zones_and_advisor.md)
+- [Noções Básicas de Criptografia](/docs/encryption_basics.md)
+- [Cofre (Vault)](/docs/vault.md)
 
-Governance and Administration
+## Governança e Administração
 
-- [Pricing](/docs/pricing.md)
-- [Cost Management](/docs/cost_management.md)
-- [Cloud Advisor](/docs/cloud_advisor.md)
-- [Tagging](/docs/tagging.md)
-- [Support Rewards](/docs/support_rewards.md)
+- [Preços](/docs/pricing.md)
+- [Gerenciamento de Custos](/docs/cost_management.md)
+- [Consultor de Nuvem](/docs/cloud_advisor.md)
+- [Tagging (Etiquetagem)](/docs/tagging.md)
+- [Recompensas de Suporte](/docs/support_rewards.md)
