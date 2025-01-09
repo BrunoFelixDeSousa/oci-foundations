@@ -1,29 +1,35 @@
-# Oracle Cloud Infrastructure Architecture
+# Arquitetura da Oracle Cloud Infrastructure (OCI)
 
-Core constructs of OCI's Physical Architecture:
-- **Regions**: localized geographic area comprising of one or more Availability Domains. 
-- **Availability Domains (AD)**: fault-tolerant data centers located within a region but connected to each other by a low latency, high bandwidth network.
-- **Fault Domains (FD)**: grouping of hardware and infrastructure within an availability domain to provide antiaffinity (i.e. *logical data center*).
+## Principais conceitos da Arquitetura Física da OCI:
 
-An OCI region is composed of one or more isolated, interconnected availability domains. Each availability domain is a separate physical location within a region. The number of availability domains per region may vary; some OCI regions have three availability domains, while some others have a single availability domain.
+- **Regiões**: área geográfica localizada que contém um ou mais Domínios de Disponibilidade (Availability Domains).
+- **Domínios de Disponibilidade (AD)**: centros de dados tolerantes a falhas localizados dentro de uma região, conectados entre si por uma rede de baixa latência e alta largura de banda.
+- **Domínios de Falha (FD)**: agrupamento de hardware e infraestrutura dentro de um domínio de disponibilidade para fornecer antiafinidade (ou seja, um *centro de dados lógico*).
 
-Fault domains provide a capability to protect your applications and instances from unexpected hardware failures or network outages within an availability domain. They provide anti-affinity: Each fault domain runs on its own set of physical hardware, so a failure that impacts one fault domain does not affect instances in other fault domains.
+Uma **região OCI** é composta por um ou mais domínios de disponibilidade isolados e interconectados. Cada domínio de disponibilidade é uma localização física separada dentro de uma região. O número de domínios de disponibilidade por região pode variar: algumas regiões têm três domínios de disponibilidade, enquanto outras têm apenas um.
 
-A fault domain is a subdivision of an availability domain. Each availability domain contains three fault domains. Fault domains let you distribute your instances so that they are not on the same physical hardware within a single availability domain. A fault domain cannot be associated with multiple availability domains.
+**Domínios de falha** fornecem proteção para suas aplicações e instâncias contra falhas de hardware inesperadas ou interrupções de rede dentro de um domínio de disponibilidade. Eles garantem **antiafinidade**: cada domínio de falha opera em seu próprio conjunto de hardware físico, de modo que uma falha em um domínio de falha não afeta instâncias em outros domínios de falha.
 
-## How do you choose a Region ?
+Um **domínio de falha** é uma subdivisão de um domínio de disponibilidade. Cada domínio de disponibilidade contém três domínios de falha. Domínios de falha permitem distribuir suas instâncias para que não estejam no mesmo hardware físico dentro de um único domínio de disponibilidade. Um domínio de falha não pode estar associado a múltiplos domínios de disponibilidade.
 
-1. **Location**: the region closest to your users for lowest latency and highest performance.
+---
 
-2. **Data Residency & Compliance**: many countries have strict data residency requirements.
+## Como escolher uma região?
 
-3. **Service Availability**: new cloud services are made available based on regional demand, at times regulatory compliance reasons, and resource availability, and several other factors.
+1. **Localização**: escolha a região mais próxima de seus usuários para garantir a menor latência e o melhor desempenho.
 
-## OCI Architeture
+2. **Residência e Conformidade de Dados**: muitos países possuem requisitos rigorosos de residência de dados.
 
-![OCI Architeture](../images/oci_architecture.png)
+3. **Disponibilidade de Serviços**: novos serviços em nuvem são disponibilizados com base na demanda regional, conformidade regulatória, disponibilidade de recursos, entre outros fatores.
 
-## High Availability Design
+---
 
-![High Availability](../images/high_availability.png)
+## Arquitetura OCI
 
+![Arquitetura OCI](../images/oci_architecture.png)
+
+---
+
+## Design de Alta Disponibilidade
+
+![Alta Disponibilidade](../images/high_availability.png)
