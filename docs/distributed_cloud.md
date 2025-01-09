@@ -1,30 +1,35 @@
-# Oracle Distributed Cloud
+# Nuvem Distribuída da Oracle
 
-Customers can get Oracle services through:
-- Public Cloud
-- Hybrid Cloud
-- Dedicated Cloud
-- Multicloud
+Os clientes podem acessar os serviços da Oracle por meio de:
 
-![Distributed Cloud](../images/distributed_cloud.png)
+- **Nuvem Pública**
+- **Nuvem Híbrida**
+- **Nuvem Dedicada**
+- **Multicloud**
 
-## Hybrid Cloud 
+![Nuvem Distribuída](../images/distributed_cloud.png)
 
-1. **Dedicated Region Cloud@Customer**: all OCI services, running in customer data centers.
+---
 
-2. **Oracle Cloud VMware Solution**: native VMware on OCI in Public Cloud or Dedicated Regions.
+## Nuvem Híbrida
 
-3. **Autonomous DB on Exadata Cloud@Customer**: cloud Autonomous Database running in your data center.
+1. **Dedicated Region Cloud@Customer**: todos os serviços OCI executados nos data centers do cliente.
 
-4. **Roving Edge Infrastructure**: OCI compute and storage for remote disconnected scenarios.
+2. **Oracle Cloud VMware Solution**: VMware nativo no OCI, disponível na Nuvem Pública ou em Regiões Dedicadas.
 
-![Hybrid Cloud Services](../images/hybrid_cloud.png)
+3. **Autonomous DB on Exadata Cloud@Customer**: banco de dados autônomo em nuvem executado no data center do cliente.
+
+4. **Roving Edge Infrastructure**: computação e armazenamento OCI para cenários remotos e desconectados.
+
+![Serviços de Nuvem Híbrida](../images/hybrid_cloud.png)
+
+---
 
 ## Multicloud
 
-- Familiar Azure-native user experience
-- Automated dentity, networking, and monitoring integration
-- Less than 2ms latency private interconnect
-- No additional cost
+- Experiência nativa do usuário familiar ao Azure.
+- Integração automatizada de identidade, rede e monitoramento.
+- Interconexão privada com latência inferior a 2ms.
+- Sem custo adicional.
 
-![Oracle Database Service for Azure](../images/oci_for_azure.png)
+![Serviço de Banco de Dados Oracle para Azure](../images/oci_for_azure.png)
