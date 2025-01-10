@@ -1,22 +1,24 @@
-# Oracle Cloud Infrastructure Compartments
+# Compartimentos no Oracle Cloud Infrastructure (OCI)
 
-When you open an account in OCI, you get a **tenancy** (fancy name for an account) and a **root compartment**.
+Ao abrir uma conta no OCI, você recebe uma **tenancy** (nome sofisticado para conta) e um **compartimento raiz**.
 
-A root compartment is a logical construct where to keep all cloud resources. Inside a root compartment you can create specific compartments for isolation and controlling access. All compartments you create are global, and they are available in every region you have access to.
+Um *root compartment* é uma construção lógica onde são mantidos todos os recursos da nuvem. Dentro do compartimento raiz, é possível criar compartimentos específicos para isolamento e controle de acesso. Todos os compartimentos criados são globais e estão disponíveis em todas as regiões acessíveis.
 
-NOTE. The best practice is to create dedicated compartments to isolate resource.
+**Nota:** A melhor prática é criar compartimentos dedicados para isolar os recursos.
 
-Key Features:
-- each resource belongs to a single compartment
-- resources can interact with other resources in different compartments
-- resources can be moved from one compartment to another
-- resources from multiple regions can be in the same compartment
-- compartments can also be nested (six levels nesting)
-- you could set quotas and budgets on compartments
+---
 
-![Compartments](../images/compartments.png)
+## Principais Características
 
-![Multiple Regions](../images/multiple_regions.png)
+- Cada recurso pertence a um único compartimento.
+- Recursos podem interagir com outros recursos em compartimentos diferentes.
+- Recursos podem ser movidos de um compartimento para outro.
+- Recursos de várias regiões podem estar no mesmo compartimento.
+- Compartimentos podem ser aninhados (até seis níveis de aninhamento).
+- É possível definir cotas e orçamentos para compartimentos.
 
+---
 
+![Compartimentos](../images/compartments.png)
 
+![Múltiplas Regiões](../images/multiple_regions.png)
