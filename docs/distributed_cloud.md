@@ -2,6 +2,9 @@
 
 # Nuvem Distribuída da Oracle
 
+## Definição de OCI Distributed Cloud
+- Todos os serviços, desempenho, preços e SLAs são consistentes, independentemente de onde ou como você os implanta.
+
 Os clientes podem acessar os serviços da Oracle por meio de:
 
 - **Nuvem Pública**
@@ -12,6 +15,13 @@ Os clientes podem acessar os serviços da Oracle por meio de:
 ![Nuvem Distribuída](../images/distributed_cloud.png)
 
 ---
+
+## Serviços de Nuvem Pública
+- 100+ serviços de nuvem disponíveis.
+- 48 regiões comerciais, governamentais e soberanas em 24 países.
+  - Regiões comerciais.
+  - Regiões soberanas (ex.: União Europeia).
+  - Regiões para governos dos EUA, Reino Unido e Austrália.
 
 ## Nuvem Híbrida
 
