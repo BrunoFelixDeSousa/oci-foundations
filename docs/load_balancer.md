@@ -1,38 +1,38 @@
-# Load Balancer
+# Balanceador de Carga
 
-A **Load Balancer** allows you to achieve *high availability* and *high scalability*. They are also referred to as **Reverse Proxies**.
+Um **Balanceador de Carga** permite que você obtenha *alta disponibilidade* e *alta escalabilidade*. Eles também são conhecidos como **Proxy Reverso**.
 
-Oracle Cloud Infrastructure Load Balancer supports three types of load balancing algorithms: 
+O **Balanceador de Carga** da Oracle Cloud Infrastructure suporta três tipos de algoritmos de balanceamento de carga:
 1. Round Robin
 2. Least Connections
 3. IP Hash
 
-NOTE: Weighted Round Robin, Weighted Least Connections, and Random are not supported by OCI Load Balancer.
+NOTA: Round Robin ponderado, Least Connections ponderado e Random não são suportados pelo Balanceador de Carga do OCI.
 
-## HTTP/S (Layer 7) Load Balancer 
+## HTTP/S (Camada 7) Balanceador de Carga
 
-The first type of Load Balancer in OCI is a **HTTP/S (Layer 7) Load Balancer**. Layer 7 basically means it understands HTTP and HTTPS. That's the OSI model.
+O primeiro tipo de Balanceador de Carga no OCI é o **HTTP/S (Camada 7) Balanceador de Carga**. A Camada 7 basicamente significa que ele entende HTTP e HTTPS, de acordo com o modelo OSI.
 
-The Load Balancer comes in two different shapes:
-- **flexible shape**: you define the minimum and the maximum and you define the range.
-- **dynamic shape**: you predefine the shapes (micro, small, medium, large). You don't have to warm up your Load Balancer. If the traffic comes to that particular shape, the Load Balancer automatically scales.
+O Balanceador de Carga vem em dois formatos diferentes:
+- **Formato flexível**: você define o mínimo e o máximo e define o intervalo.
+- **Formato dinâmico**: você predefine os formatos (micro, pequeno, médio, grande). Não é necessário aquecer o Balanceador de Carga. Se o tráfego chegar a esse formato específico, o Balanceador de Carga se ajusta automaticamente.
 
-The Load Balancer can be:
-- **public**: it is available on the web.
-- **private**: it means your multiple tiers, like a web tier, can talk to your database tier and balance the traffic between them, but both tiers don't have to be public.
+O Balanceador de Carga pode ser:
+- **Público**: está disponível na web.
+- **Privado**: significa que seus múltiplos níveis, como o nível web, podem se comunicar com o nível do banco de dados e balancear o tráfego entre eles, mas ambos os níveis não precisam ser públicos.
 
-![Load Balancer](../images/http_load_balancer.png)
+![Balanceador de Carga](../images/http_load_balancer.png)
 
-## Network (Layer 4) Load Balancer 
+## Network (Camada 4) Balanceador de Carga
 
-The second type of Load Balancer in OCI is called **Network (Layer 4) Load Balancer**. And as the name specify, Network Load Balancer operates at layer 4, layer 3, and layer 4 so it understands TCP, UDP, also supports ICMP.
+O segundo tipo de Balanceador de Carga no OCI é chamado **Network (Camada 4) Balanceador de Carga**. E, como o nome indica, o Balanceador de Carga de Rede opera nas camadas 3 e 4, ou seja, entende TCP, UDP e também suporta ICMP.
 
-Like HTTP Load Balancer, it has both public and a private option.
+Assim como o Balanceador de Carga HTTP, ele tem as opções pública e privada.
 
 ![Network Load Balancer](../images/network_load_balancer.png)
 
-## HTTP/S Load Balancer vs Network Load Balancer
+## Balanceador de Carga HTTP/S vs Balanceador de Carga de Rede
 
-Why would you use Network Load Balancer or a HTTP Load Balancer? 
+Por que você usaria o Balanceador de Carga de Rede ou o Balanceador de Carga HTTP?
 
-The primary reason you would use it is it's much faster than HTTP Load Balancer. It has much lower latency. So if performance is a key criteria for you, go with Network Load Balancer. On the contrary, the HTTP Load Balancer has higher level intelligence because it can look at the packets, it can inspect the packets, and it gets that intelligence. So if you're looking for that kind of routing intelligence, then go with HTTP Load Balancer.
+A principal razão para usar o Balanceador de Carga de Rede é que ele é muito mais rápido do que o Balanceador de Carga HTTP. Ele tem uma latência muito mais baixa. Então, se o desempenho é um critério importante para você, opte pelo Balanceador de Carga de Rede. Por outro lado, o Balanceador de Carga HTTP tem inteligência de nível mais alto porque ele pode analisar os pacotes, inspecionar os pacotes e obter essas informações. Então, se você está buscando esse tipo de inteligência de roteamento, vá com o Balanceador de Carga HTTP.
