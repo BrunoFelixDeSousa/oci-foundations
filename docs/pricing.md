@@ -1,41 +1,43 @@
-# Pricing
+# Preços
 
-Oracle's pricing is simple, it's transparent, and it's lower than competitors. 
+O modelo de preços da Oracle é simples, transparente e mais barato que os concorrentes.
 
-OCI has the same pricing across the world. This is very different than the typical traditional Cloud model where the pricing is very local. 
+O OCI tem o mesmo modelo de preços em todo o mundo, o que é diferente do modelo tradicional de nuvem, onde os preços são ajustados localmente.
 
-Factors that impacts pricing:
-- resource size (bigger resources cost more)
-- resource tipe (VMs vs BMs, VMs vs Functions, etc.)
-- data transfer (no ingress cost, careful with egress cost)
+Fatores que impactam o preço:
+- **Tamanho dos recursos** (recursos maiores custam mais)
+- **Tipo de recurso** (VMs vs BMs, VMs vs Funções, etc.)
+- **Transferência de dados** (sem custo de entrada, cuidado com o custo de saída)
 
-**Pay As You Go (PAYG)** pricing model:
-- charged only for the resource consumed
-- no upfront commitment
-- no minimum service period
-- usage metered
+## Modelos de Preços
 
-**Annual (or Monthly) Universal Credits** pricing model:
-- commit to ann annual pool of funds
-- significant savings
-- must use credits within 12 months
-- discounts based on sise of deal and term of deal
-- if you end up with more resource usage, then you pay for them on a PAYG basis
+**Modelo Pay As You Go (PAYG)**:
+- Cobrado apenas pelo recurso consumido
+- Sem compromisso inicial
+- Sem período mínimo de serviço
+- Uso medido
 
-**Bring YOur Own License (BYOL)** pricing model:
-- apply your current on-premises Oracle licenses to equivalent, higly automated IaaS & PaaS services in the cloud
-- complte license mobility with on-premises
+**Modelo Anual (ou Mensal) de Créditos Universais**:
+- Compromisso com um pool anual de recursos
+- Economias significativas
+- Os créditos devem ser usados dentro de 12 meses
+- Descontos baseados no tamanho e duração do contrato
+- Se o uso de recursos exceder o valor comprometido, o pagamento será feito com base no modelo PAYG
 
-**Consumption Based** pricing model:
-- charged only when you consume the resource
-- ideal for managed serverless platform called **Functions**
+**Modelo Bring Your Own License (BYOL)**:
+- Aplica suas licenças atuais do Oracle em servidores equivalentes, altamente automatizados de IaaS e PaaS na nuvem
+- Mobilidade completa de licenças com instalações locais
 
-## Data Transfer Costs
+**Modelo de Preço com Base no Consumo**:
+- Cobrado apenas quando o recurso é consumido
+- Ideal para a plataforma serverless gerenciada chamada **Funções**
 
-With OCI you don't really pay for any data transfer happening between Availability Domains. 
+## Custos de Transferência de Dados
 
-Incoming traffic is **free**, but outgoing traffic is **10 times lower** than some of the other Cloud providers. 
+No OCI, você não paga pela transferência de dados entre os Domínios de Disponibilidade.
 
-In OCI, ingress data transfer (data coming into OCI from the internet) is typically free. However, egress data transfer (data going out from OCI to the internet) is chargeable after the first 10 TB/month, depending on the specific region and destination.
+O tráfego de entrada é **gratuito**, mas o tráfego de saída é **10 vezes mais barato** do que em alguns outros provedores de nuvem.
 
-![Data Trasnfer Costs](../images/data_transfer_costs.png)
+Na OCI, a transferência de dados de entrada (dados que vêm da internet para a OCI) é normalmente gratuita. No entanto, a transferência de dados de saída (dados que saem da OCI para a internet) é cobrada após os primeiros 10 TB/mês, dependendo da região e do destino.
+
+![Custos de Transferência de Dados](../images/data_transfer_costs.png)

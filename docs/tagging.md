@@ -1,42 +1,46 @@
-# Tagging
+# Tagging in OCI
 
-Tags are basically these key value pairs, which you could use to better organize your resources. 
+Tags are key-value pairs used to better organize and manage your resources in Oracle Cloud Infrastructure (OCI). They offer several benefits, such as:
 
-Tags allows you to:
-- customizze the organization of your resources
-- cost management
-- tag based access control (ability to write policies based on *tags*)
+- Customizing the organization of resources
+- Enhancing cost management
+- Enabling tag-based access control (policies can be written based on tags)
 
-In OCI, there are two kinds of tag:
-1. free-form tags
-2. defined tags (recommended)
+In OCI, there are two types of tags:
+
+1. **Free-Form Tags**
+2. **Defined Tags** (recommended)
 
 ![Tagging](../images/tagging.png)
 
 ## Free-Form Tags
 
-Characteristic:
-- basic implementation
-- comprises key and value only
-- no defined schema or access restriction
+### Characteristics:
+- Basic implementation
+- Comprises only a key and a value
+- No defined schema or access restrictions
 
-Example:
+**Example:**
+```plaintext
+Environment = "Production"
+```
 
-	Environment = "Production"
+## Defined Tags (Recommended)
 
-## Defined Tags (recommended)
+### Characteristics:
+- More features and control
+- Contained within namespaces
+- Defined schema
+- Secured with policies
 
-Characteristic:
-- more feeatures and control
-- contained in namespaces
-- defined schema
-- secured with policy
+**Example:**
+```plaintext
+Operations.Environment = "Production"
+```
 
-Example:
+You can also define the type of values allowed for defined tags, such as:
 
-	Operations.Environment = "Production"
-
-You could also specify the type of values allowed. You could say the type is a *String* and it allows any value, or it is blank. Or you could set a specific set of values and when the users come to apply this particular tag, they can only choose from those particular values.
+- Allowing any string value
+- Restricting to specific values (users can only select from predefined options)
 
 ![Tag Namespace](../images/tag_namespace.png)
-

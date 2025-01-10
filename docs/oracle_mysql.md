@@ -1,23 +1,23 @@
-#  MySQL Database Cloud Service
+# Serviço de Banco de Dados MySQL na Nuvem
 
-The two key defining characteristics of the MySQL Database Cloud Service are the **high availability** feature, which you should definitely use for production and then **HeatWave**, which lets you do both OLAP and OLTP transactions using the MySQL Database Cloud Service. 
+As duas principais características definidoras do Serviço de Banco de Dados MySQL na Nuvem são o recurso de **alta disponibilidade**, que você deve definitivamente usar em produção, e o **HeatWave**, que permite realizar transações OLAP e OLTP usando o Serviço de Banco de Dados MySQL na Nuvem.
 
-## High Availability
+## Alta Disponibilidade
 
-High availability basically gives you that fault tolerance. It has a lot of benefits like automatic failover, increased uptime, zero data loss. 
+A alta disponibilidade basicamente oferece tolerância a falhas. Ela traz muitos benefícios, como failover automático, aumento de tempo de atividade e zero perda de dados.
 
-With a standalone option, you get a single instance MySQL DB systems back ended by the resilient and secure OCI block volume. This option is good for dev and test and development environment. But if you're running in production, you really want to go with the high availability option. This option enables applications to meet higher uptime requirements and the zero data loss tolerance.
+Com a opção de instância única, você tem um sistema de banco de dados MySQL único, respaldado pelo volume de bloco resiliente e seguro do OCI. Esta opção é boa para ambientes de desenvolvimento e testes. No entanto, se você estiver rodando em produção, realmente vale a pena optar pela opção de alta disponibilidade. Essa opção permite que os aplicativos atendam a requisitos mais altos de tempo de atividade e tolerância a perda de dados zero.
 
-When you select the high availability option, MySQL DB system with **three instances** is provisioned across different availability domains or different fault domains. The data is replicated among the instances. 
+Ao selecionar a opção de alta disponibilidade, um sistema de banco de dados MySQL com **três instâncias** é provisionado em diferentes domínios de disponibilidade ou diferentes domínios de falha. Os dados são replicados entre as instâncias.
 
-## Heatwave
+## HeatWave
 
-HeatWave is a new integrated high performance in memory query accelerator for MySQL Database Service that accelerates MySQL performance by order of magnitude for analytics and transaction queries. HeatWave scales out to thousands of cores.
+HeatWave é um novo acelerador de consulta de alto desempenho integrado em memória para o Serviço de Banco de Dados MySQL, que acelera o desempenho do MySQL em uma ordem de magnitude para consultas analíticas e transacionais. O HeatWave escala para milhares de núcleos.
 
-MySQL Database Service with HeatWave is the only service available in the market that enables database admins and app developers to run both OLTP and OLAP workloads directly from their MySQL database. This eliminates the need for complex, time consuming, and expensive data movement, and integration with a separate analytics database. This service is optimized for and exclusively available in Oracle Cloud Infrastructure.
+O Serviço de Banco de Dados MySQL com HeatWave é o único serviço disponível no mercado que permite aos administradores de banco de dados e desenvolvedores de aplicativos executar cargas de trabalho OLTP e OLAP diretamente de seu banco de dados MySQL. Isso elimina a necessidade de movimentação de dados complexa, demorada e cara, além da integração com um banco de dados de análises separado. Este serviço é otimizado e disponível exclusivamente na Oracle Cloud Infrastructure.
 
-MySQL HeatWave uses an **in-memory data storage** mechanism to provide high-performance query execution. It achieves this by storing the data in a columnar format in-memory, which allows for faster access and processing of data during query execution, especially for OLAP workloads.
+O MySQL HeatWave usa um mecanismo de **armazenamento de dados em memória** para fornecer execução de consultas de alto desempenho. Isso é alcançado armazenando os dados em um formato colunar na memória, o que permite acesso e processamento mais rápidos dos dados durante a execução das consultas, especialmente para cargas de trabalho OLAP.
 
-MySQL HeatWave is an integrated query accelerator for the MySQL Database service in Oracle Cloud Infrastructure. It significantly boosts the performance of MySQL, enabling it to efficiently run OLAP (Online Analytical Processing) queries, which are complex queries that analyze large amounts of data to uncover business insights.
+O MySQL HeatWave é um acelerador de consulta integrado para o serviço de Banco de Dados MySQL na Oracle Cloud Infrastructure. Ele aumenta significativamente o desempenho do MySQL, permitindo que ele execute de maneira eficiente consultas OLAP (Processamento Analítico Online), que são consultas complexas que analisam grandes volumes de dados para descobrir insights de negócios.
 
 ![MySQL HeatWave](../images/heatwave.png)

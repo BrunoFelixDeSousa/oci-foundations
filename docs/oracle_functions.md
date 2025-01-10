@@ -1,16 +1,15 @@
 # Oracle Functions
 
-One of the greatest advantages of FaaS is that it truly leads you to a *consumption based* pricing model where you are only billed for the time your function is running.
+Uma das maiores vantagens do FaaS (Function as a Service) é que ele realmente leva você a um modelo de precificação baseado no *uso*, onde você é cobrado apenas pelo tempo em que sua função está em execução.
 
 ![FaaS](../images/faas.png)
 
-## Key Characteristics
+## Características Principais
 
-Oracle Functions is powered by the **Fn Project** Open Source engine. So unlike some of the other cloud vendors out there, this particular service is built on the open source Fn engine.
+Oracle Functions é impulsionado pelo mecanismo **Fn Project** de código aberto. Então, ao contrário de alguns outros provedores de nuvem, esse serviço específico é construído sobre o mecanismo open-source Fn.
 
 ![Oracle Functions](../images/oracle_functions.png)
 
-## How does it work ?
+## Como Funciona?
 
-![Oracle Functions Model](../images/oracle_functions_model.png)
-
+![Modelo Oracle Functions](../images/oracle_functions_model.png)

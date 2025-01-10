@@ -1,16 +1,15 @@
-# Database Introduction
+# Introdução ao Banco de Dados
 
-![Database Services in Oracle Cloud](../images/database_services.png)
+![Serviços de Banco de Dados na Oracle Cloud](../images/database_services.png)
 
-## Autonomous Database
+## Banco de Dados Autônomo
 
-Autonomous Database is the world's first autonomous data management service in the cloud which delivers automated patching, upgrades, and tuning while the system is running, without any human intervention. So this database is self-managing, self-securing, and self-repairing, which helps to eliminate manual database management and human errors.
+O Banco de Dados Autônomo é o primeiro serviço de gerenciamento de dados autônomo do mundo na nuvem, que oferece patching, atualizações e ajustes automatizados enquanto o sistema está em execução, sem qualquer intervenção humana. Portanto, esse banco de dados é autoadministrado, autosegurado e autorreparável, o que ajuda a eliminar a necessidade de gerenciamento manual de banco de dados e erros humanos.
 
-Autonomous Database comes in two flavors:
-1. **Shared Exadata Infrastructure**: you provision and manage only the autonomous database, while Oracle deploys and manages all the underlying infrastructure
-2. **Dedicated Exadata Infrastructure**: OCI gives you a completely dedicated compute, storage, network, and database service just for you, just for a single benefit
+O Banco de Dados Autônomo possui duas opções:
+1. **Infraestrutura Exadata Compartilhada**: você provisiona e gerencia apenas o banco de dados autônomo, enquanto a Oracle implanta e gerencia toda a infraestrutura subjacente.
+2. **Infraestrutura Exadata Dedicada**: a OCI fornece a você um serviço totalmente dedicado de computação, armazenamento, rede e banco de dados, exclusivo para você, com benefícios únicos.
 
 ## Cloud@Customer
 
-Cloud@Customer enables you to meet your company's demanding regulatory requirements, data residency requirements, and application latency requirements, while at the same time, you can leverage all the benefits of database services running in OCI Public Cloud.
-
+O Cloud@Customer permite que você atenda aos rigorosos requisitos regulatórios da sua empresa, requisitos de residência de dados e exigências de latência de aplicativos, enquanto, ao mesmo tempo, você pode aproveitar todos os benefícios dos serviços de banco de dados que estão sendo executados na Nuvem Pública da OCI.

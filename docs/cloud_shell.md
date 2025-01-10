@@ -1,32 +1,37 @@
 # Oracle Cloud Shell
 
-Cloud Shell is  a small virtual machine running a Linux shell which you access through the browser through the OCI Console. And it comes with a pre-authenticated OCI CLI and lots of utilities like Git, Java, Python, etc.
+O **Cloud Shell** é uma pequena máquina virtual executando um shell Linux, que você acessa diretamente através do navegador no **Console OCI**. Ele vem com o **OCI CLI** pré-autenticado e várias utilidades como Git, Java, Python, etc.
 
-SSH protocol, also referred to as **Secure SHell**, is a method for secure remote login from one computer to another. 
+O **SSH** (Secure SHell) é um protocolo utilizado para login remoto seguro de um computador para outro.
 
-## Image and Shape
+## Imagem e Forma
 
-Shape is basically a (virtual hardware) template which determines number of CPUs, amount of memory, other resources. 
+- **Forma** é basicamente um modelo (hardware virtual) que determina o número de CPUs, a quantidade de memória e outros recursos.
+- **Imagem** é o sistema operacional que roda sobre essa forma.
 
-Image is basically an operating system, which runs on top of that shape.
+## Gerar Par de Chaves SSH
 
-## Generate SSH key pair
+```bash
+(shell)$ mkdir .ssh
+(shell)$ cd .ssh
+(shell)$ ssh-keygen -b 2048 -t rsa -f mykeyname
+```
 
-    (shell)$ mkdir .ssh
-    (shell)$ cd .ssh
-    (shell)$ ssh-keygen -b 2048 -t rsa -f mykeyname
+## Instalar Apache Web Server
 
-## Install Apache Web Server
+```bash
+(shell)$ sudo yum -y install httpd
+(shell)$ sudo systemctl enable httpd.service
+(shell)$ sudo systemctl start httpd.service
+(shell)$ sudo firewall-offline-cmd --add-service=http
+(shell)$ sudo firewall-offline-cmd --add-service=https
+(shell)$ sudo systemctl enable firewalld
+(shell)$ sudo systemctl restart firewalld
+(shell)$ sudo bash -c 'echo This is my web server running on Oracle Cloud Infrastructure >> /var/www/html/index.html'
+```
 
-    (shell)$ sudo yum -y install httpd
-    (shell)$ sudo systemctl enable httpd.service
-    (shell)$ sudo systemctl start httpd.service
-    (shell)$ sudo firewall-offline-cmd --add-service=http
-    (shell)$ sudo firewall-offline-cmd --add-service=https
-    (shell)$ sudo systemctl enable firewalld
-    (shell)$ sudo systemctl restart firewalld
-    (shell)$ sudo bash -c 'echo This is my web server running on Oracle Cloud Infrastructure >> /var/www/html/index.html'
+## Login na Instância
 
-## Login into instance
-
-    (shell)$ ssh -i demokey opc@<publicIPaddress>
+```bash
+(shell)$ ssh -i demokey opc@<publicIPaddress>
+```

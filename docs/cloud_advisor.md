@@ -1,5 +1,5 @@
 # Cloud Advisor
 
-Cloud Advisor is a service that analyzes OCI cloud resources and provide recommendations to maximize cost savings and optimize your tenancies, performance, security, and availability. Let's look at Cloud Advisor in action.
+O **Cloud Advisor** é um serviço que analisa os recursos da nuvem OCI e fornece recomendações para maximizar a economia de custos e otimizar a sua infraestrutura, desempenho, segurança e disponibilidade. Vamos ver o **Cloud Advisor** em ação.
 
-Cloud Advisor provides recommendations to help you maximize cost savings and improve security in your tenancy. It finds inefficiencies in your tenancy and provides guided solutions explaining how to fix them. In addition, built-in Cloud Guard recommendations help you see and address security vulnerabilities.
+O **Cloud Advisor** fornece recomendações para ajudá-lo a maximizar a economia de custos e melhorar a segurança em sua infraestrutura. Ele encontra ineficiências no seu ambiente e oferece soluções guiadas, explicando como corrigi-las. Além disso, recomendações integradas do **Cloud Guard** ajudam você a visualizar e abordar vulnerabilidades de segurança.

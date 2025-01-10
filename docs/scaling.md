@@ -1,32 +1,32 @@
-# Scaling
+# Escalabilidade
 
-There are two kinds of scaling:
-- vertical scaling
-- horizontal scaling
+Existem dois tipos de escalabilidade:
+- Escalabilidade vertical
+- Escalabilidade horizontal
 
-## Vertical Scaling (scale up/down)
+## Escalabilidade Vertical (escala para cima/para baixo)
 
-Vertical scaling means that you are scaling up or down instance shapes. 
+A escalabilidade vertical significa que você está alterando o formato das instâncias, ou seja, escalando para cima ou para baixo.
 
-New shape must have the **same hardware architecture**. 
+A nova configuração precisa ter a **mesma arquitetura de hardware**.
 
-When you scale up or scale down there is a **downtime required**.
+Quando você escala para cima ou para baixo, há **tempo de inatividade necessário**.
 
-Good practice: stop your instance before any kind vertical scaling.
+Boa prática: pare sua instância antes de realizar qualquer tipo de escalabilidade vertical.
 
-![Vertical Scaling](../images/vertical_scaling.png)
+![Escalabilidade Vertical](../images/vertical_scaling.png)
 
-## Horizontal Scaling (Autoscaling) (scale out/in)
+## Escalabilidade Horizontal (Autoscaling) (escala para fora/para dentro)
 
-Horizontal Scaling means that you add more VMs of the same shape, or you take a bit more of the same shape. This enables large-scale deployment of VMs.
+A escalabilidade horizontal significa que você adiciona mais VMs do mesmo tipo ou faz ajustes na quantidade de VMs do mesmo tipo. Isso permite implantações de grande escala de VMs.
 
-Why is this so popular and powerful? The reason it is so powerful is, it gives you that scaling capability, but it also gives you that **high availability** And a thing which makes it really powerful is, you can match traffic demand by adding to removing VMs **automatically**. There is no extra cost for using Autoscaling.
+Por que isso é tão popular e poderoso? O motivo é que ele oferece a capacidade de escalar, mas também proporciona **alta disponibilidade**. Além disso, o que o torna ainda mais poderoso é que você pode ajustar a demanda de tráfego adicionando ou removendo VMs **automaticamente**. Não há custo adicional para usar o Autoscaling.
 
-There are three steps you have to follow to get Autoscaling:
-1. create a **template** (configuration): OS image, matadata, shapes, cNICs, etc.
-2. create an **instance pool**: a collection of instance in advance
-3. create the **autoscaling rules**: minimum size, maximum size, etc.
+Para configurar o Autoscaling, existem três etapas que você deve seguir:
+1. Criar um **modelo** (configuração): imagem do sistema operacional, metadados, tipos de instância, cNICs, etc.
+2. Criar um **pool de instâncias**: um conjunto de instâncias pré-configuradas.
+3. Criar as **regras de autoscaling**: tamanho mínimo, tamanho máximo, etc.
 
-Autoscaling in an instance pool within the OCI Compute service automatically provisions and removes instances based on specific conditions or schedules. It does not change the shape of the compute instance, nor is it limited to only metric-based or schedule-based autoscaling. Instead, autoscaling can be driven by both **metric-based** and **schedule-based** policies, offering a more dynamic and flexible scaling solution.
+O autoscaling em um pool de instâncias dentro do serviço de Computação da OCI provisiona e remove instâncias automaticamente com base em condições ou horários específicos. Não altera o tipo de instância de computação, nem é limitado apenas ao autoscaling baseado em métricas ou horários. Em vez disso, o autoscaling pode ser acionado por políticas **baseadas em métricas** ou **baseadas em horários**, oferecendo uma solução de escalabilidade mais dinâmica e flexível.
 
-![Autoscaling Rules](../images/autoscaling_rules.png)
+![Regras de Autoscaling](../images/autoscaling_rules.png)

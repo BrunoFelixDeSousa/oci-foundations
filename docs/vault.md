@@ -1,34 +1,34 @@
-#  Oracle Vault
+# Oracle Vault
 
-OCI Vault is a managed service that lets you centrally manage encryption keys and secret credentials. Vault removes the need to store encryption keys and secrets in configuration files or in code. The service is a regional service and it has a public API endpoint that you can use.
+O OCI Vault é um serviço gerenciado que permite gerenciar centralmente chaves de criptografia e credenciais secretas. O Vault elimina a necessidade de armazenar chaves de criptografia e segredos em arquivos de configuração ou no código. O serviço é regional e possui um endpoint de API pública que pode ser utilizado.
 
-Secrets are credentials such as passwords, certificates, SSH-keys, or authentication tokens that you can use with Oracle Cloud Infrastructure services.
+Os segredos são credenciais, como senhas, certificados, chaves SSH ou tokens de autenticação, que podem ser usados com os serviços da Oracle Cloud Infrastructure.
 
-The primary purpose of the OCI Vault service is to store and manage encryption keys and secrets. The Vault service helps you to securely store, manage, and control access to encryption keys, secrets, and certificates, ensuring the protection of sensitive data.
+O principal objetivo do serviço OCI Vault é armazenar e gerenciar chaves de criptografia e segredos. O serviço Vault ajuda você a armazenar, gerenciar e controlar o acesso a chaves de criptografia, segredos e certificados de forma segura, garantindo a proteção de dados sensíveis.
 
-OCI Vault is composed of various components including master encryption keys, secrets, and vaults. A vault in OCI is a logical entity where you can centrally manage and store your encryption keys and secrets. A secret is a resource that helps manage credentials needed to access OCI resources. A master encryption key is a key that OCI uses to encrypt the encryption keys that you create in the vault (these are customer managed). Database backup is not a component of OCI Vault; it is a functionality associated with the OCI Database service.
+O OCI Vault é composto por vários componentes, incluindo chaves de criptografia mestre, segredos e cofres. Um cofre no OCI é uma entidade lógica onde você pode gerenciar e armazenar centralmente suas chaves de criptografia e segredos. Um segredo é um recurso que ajuda a gerenciar credenciais necessárias para acessar os recursos do OCI. Uma chave de criptografia mestre é uma chave que a OCI usa para criptografar as chaves de criptografia que você cria no cofre (essas são gerenciadas pelo cliente). Backup de banco de dados não é um componente do OCI Vault; é uma funcionalidade associada ao serviço de banco de dados OCI.
 
-## Envelop Encryption
+## Criptografia de Envelope
 
-The way the Vault operates is called **envelop encryption**. It is a two tiered hierarchy for keys:
-- Tier-1: the **data encryption keys** encrypt customer data
-- Tier-2: the **master encryption keys** encrypt the data keys
+O funcionamento do Vault é chamado de **criptografia de envelope**. É uma hierarquia de duas camadas para chaves:
+- Camada-1: as **chaves de criptografia de dados** criptografam os dados do cliente.
+- Camada-2: as **chaves de criptografia mestre** criptografam as chaves de dados.
 
-So you can see on the picture here, there is the master key that is used to encrypt the data key. And so you see that out of the middle box where the data is encrypted by the master key, but the actual encryption for storage, let's say, it's block storage or object storage or file storage, is actually done using the data key.
+Como mostrado na imagem, a chave mestre é usada para criptografar a chave de dados. Então, vemos que, fora da caixa central onde os dados são criptografados pela chave mestre, a criptografia real para o armazenamento, seja em armazenamento de bloco, armazenamento de objetos ou armazenamento de arquivos, é feita usando a chave de dados.
 
-You can use IM policies to authorize access to master keys  and audit logs to monitor all key related activities.
+Você pode usar políticas de IM (Identity and Management) para autorizar o acesso às chaves mestres e auditorias de log para monitorar todas as atividades relacionadas às chaves.
 
-What are the benefits? 
-- it is easier to manage
-- it limits the blast radius
-- it does not generate a complete data re-encryption
+### Quais são os benefícios?
+- É mais fácil de gerenciar.
+- Limita o impacto de falhas (blast radius).
+- Não gera uma recriptografia completa dos dados.
 
-**IMPORTANT**: If the master key is deleted, then **there is no way for anyone to recover the data!** 
+**IMPORTANTE**: Se a chave mestre for excluída, **não há como recuperar os dados!**
 
-OCI soft delete the keys with a seven day gap. Vault cannot be deleted immediately. You can schedule the deletion by configuring a waiting period. The Vault and all the keys created inside the Vault are deleted at the end of this waiting period. And all the data that was protected by those keys is no longer accessible after the Vault is deleted. So that's why that 7 to 30 day period is there by design. 
+A OCI realiza uma exclusão suave das chaves com um intervalo de sete dias. O cofre não pode ser excluído imediatamente. Você pode agendar a exclusão configurando um período de espera. O cofre e todas as chaves criadas dentro dele são excluídos ao final desse período de espera. Todos os dados protegidos por essas chaves não estarão mais acessíveis após a exclusão do cofre. Por isso, esse período de 7 a 30 dias é projetado dessa forma.
 
-**IMPORTANT**: once the Vault is deleted, it cannot be recovered!
+**IMPORTANTE**: uma vez que o cofre seja excluído, **não pode ser recuperado!**
 
 ![Vault](../images/vault.png)
 
-![Vault Example](../images/vault_example.png)
+![Exemplo de Vault](../images/vault_example.png)

@@ -1,27 +1,27 @@
-#  Security Zones & Security Advisor
+# Zonas de Segurança & Security Advisor
 
-Security Zone refers to a cloud compartment in which you cannot disable security. 
+**Security Zone** refere-se a um compartimento de nuvem no qual você não pode desativar a segurança.
 
-Security Advisor refers to a cloud service that unifies Security Zone, Cloud Guard, and some other capabilities together in a cohesive whole.
+**Security Advisor** é um serviço de nuvem que unifica o Security Zone, Cloud Guard e outras capacidades em um conjunto coeso.
 
-## Security Zones
+## Zonas de Segurança
 
-In terms of functional usage, **Security Zones** and a **Security Zone Recipe** can be classified as **Preventive Counter Measures**.
+Em termos de uso funcional, **Zonas de Segurança** e uma **Receita de Zona de Segurança** podem ser classificadas como **Medidas Preventivas**.
 
-![Security Zones](../images/security_zones.png)
+![Zonas de Segurança](../images/security_zones.png)
 
-When you create a Security Zone, you select one or more compartments and a recipe. A Security Zone Recipe specifies which policies you want to enforce. Oracle provides a default set of policies, but you can create your own policies.
+Quando você cria uma Zona de Segurança, você seleciona um ou mais compartimentos e uma receita. Uma Receita de Zona de Segurança especifica as políticas que você deseja aplicar. A Oracle fornece um conjunto padrão de políticas, mas você pode criar suas próprias políticas.
 
-Any attempt to create or modify resources in the security zone that violates one of the zone's policies is denied. Security Zone uses Cloud Guard, as you can see in the diagram here, to routinely scan your zones and report any zone policy violation. 
+Qualquer tentativa de criar ou modificar recursos na zona de segurança que viole uma das políticas da zona é negada. A Zona de Segurança utiliza o Cloud Guard, como mostrado no diagrama, para realizar varreduras periódicas nas suas zonas e relatar qualquer violação das políticas da zona.
 
-NOTE: you must enable Cloud Guard before you can use Security Zones. 
+**Observação:** você deve ativar o Cloud Guard antes de poder usar as Zonas de Segurança.
 
-The main advantage of using OCI Security Zones when deploying resources in your cloud environment is to ensure adherence to security best practices and policies. Security Zones help maintain a strong security posture by automatically enforcing predefined security policies within designated compartments, preventing the creation of non-compliant resources.
+A principal vantagem de usar Zonas de Segurança da OCI ao implantar recursos em seu ambiente de nuvem é garantir a conformidade com as melhores práticas e políticas de segurança. As Zonas de Segurança ajudam a manter uma postura de segurança forte, aplicando automaticamente as políticas de segurança predefinidas dentro dos compartimentos designados, impedindo a criação de recursos não conformes.
 
-![Security Zone Example](../images/security_zone_example.png)
+![Exemplo de Zona de Segurança](../images/security_zone_example.png)
 
 ## Security Advisor
 
-Security advisor is a combination service that takes the functionality that's provided by Cloud Guard and Security Zone as well as some of the other security services and bring them together.
+O Security Advisor é um serviço combinado que reúne a funcionalidade fornecida pelo Cloud Guard, Security Zone e outros serviços de segurança, trazendo-os juntos em um único serviço coeso.
 
 ![Security Advisor](../images/security_advisor.png)

@@ -1,13 +1,13 @@
-# Instance Basics
+# Noções Básicas de Instância
 
-An instance is a compute host and it has several dependencies.
+Uma instância é um host de computação e possui várias dependências.
 
-Block storage is the type of storage associated with instances in the OCI Compute service. It provides low-latency, high-performance storage volumes that can be attached to instances to store data and applications.
+O armazenamento em bloco é o tipo de armazenamento associado às instâncias no serviço OCI Compute. Ele fornece volumes de armazenamento de baixa latência e alto desempenho, que podem ser anexados às instâncias para armazenar dados e aplicativos.
 
-The **Instance configuration** is a predefined configuration that includes the instance's shape, base image, and metadata. It allows users to quickly create new instances with the same configuration, streamlining the deployment process.
+A **Configuração da Instância** é uma configuração predefinida que inclui a forma da instância, a imagem base e os metadados. Ela permite que os usuários criem rapidamente novas instâncias com a mesma configuração, agilizando o processo de implantação.
 
-![Instance Basics](../images/instance_basics.png)
+![Noções Básicas de Instância](../images/instance_basics.png)
 
-## Live Migrate
+## Migração ao Vivo
 
-There is one more feature which is really relevant when you are talking about compute instances, and that's live migration. We know that computers fail all the time. So how do we make sure that whatever compute host you are running is always up and running, itself? So we have this feature called **Live Migrate**. And the idea here is if one of the compute hosts goes down, there's a problem, we would migrate your VM to another host in our data center, and it will be transparent to you. There are multiple options you provide (whether opt-in or opt-out) you can choose from. But the idea is we migrate your virtual machines so you can live-migrate between hosts without rebooting. This keeps your applications running even during maintenance events. To achieve this in your own data centers is a not-so-trivial task, but we make that seamless within OCI.
+Há uma funcionalidade adicional que é realmente relevante quando se fala sobre instâncias de computação, que é a migração ao vivo. Sabemos que os computadores falham o tempo todo. Então, como garantir que o host de computação que você está utilizando esteja sempre funcionando? Temos essa funcionalidade chamada **Migração ao Vivo**. A ideia aqui é que, se um dos hosts de computação cair ou apresentar um problema, migraremos sua VM para outro host em nosso data center, e isso será transparente para você. Existem várias opções disponíveis (seja opt-in ou opt-out) que você pode escolher. Mas a ideia é que migramos suas máquinas virtuais, permitindo que você faça migração ao vivo entre hosts sem precisar reiniciar. Isso mantém suas aplicações em funcionamento mesmo durante eventos de manutenção. Conseguir isso em seus próprios data centers não é uma tarefa simples, mas fazemos com que seja tranquilo dentro da OCI.

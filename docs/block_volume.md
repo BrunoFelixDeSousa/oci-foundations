@@ -1,47 +1,47 @@
-# Block Volume
+# Volume de Bloco
 
-Block Volume service provides persistent and durable storage to compute instances. The data is stored independently of the instance lifecycle. Durable means we make multiple copies. So even if we lose one copy, we have other copies of the data available in the data center. 
+O serviço de **Volume de Bloco** fornece armazenamento persistente e durável para instâncias de computação. Os dados são armazenados de forma independente do ciclo de vida da instância. "Durável" significa que fazemos múltiplas cópias. Assim, mesmo que uma cópia seja perdida, temos outras cópias dos dados disponíveis no data center.
 
-Block Volume Tiers:
-1. **Lower Cost**: large sequential I/O workloads (streaming data warehousing)
-2. **Balanced**: balanced choice for random I/O (boot disks)
-3. **Higher Performance**: most I/O-demanding workloads
-4. **Ultra High Performance**: highest I/O-demanding workloads (relational databases)
+**Tipos de Volume de Bloco:**
+1. **Custo mais baixo**: cargas de trabalho de I/O sequenciais grandes (armazenamento de dados em streaming).
+2. **Equilibrado**: escolha balanceada para I/O aleatória (discos de inicialização).
+3. **Maior performance**: cargas de trabalho mais exigentes de I/O.
+4. **Ultra Alta Performance**: cargas de trabalho com maior demanda de I/O (bancos de dados relacionais).
 
-![Block Volume Performance Levels](../images/block_volume_tiers.png)
+![Níveis de Performance do Volume de Bloco](../images/block_volume_tiers.png)
 
-In case of block volume, there is something which is called block volume performance unit. And basically, this includes the concept of **Volume Performance Units (VPUs)**. You can purchase more VPUs to allocate more resources to a volume increasing your IOPS per gig and through output per gig.
+No caso do volume de bloco, existe um conceito chamado **unidade de performance do volume de bloco**. Isso inclui o conceito de **Unidades de Performance de Volume (VPUs)**. Você pode adquirir mais VPUs para alocar mais recursos para um volume, aumentando seu IOPS por gigabyte e a taxa de transferência por gigabyte.
 
-The OCI Block Volume service uses replication to ensure data durability and protection against hardware failures. Data is automatically replicated across multiple storage devices within the same availability domain, which helps maintain data integrity and availability in case of hardware issues.
+O serviço de **Volume de Bloco** da OCI utiliza replicação para garantir durabilidade dos dados e proteção contra falhas de hardware. Os dados são automaticamente replicados entre múltiplos dispositivos de armazenamento dentro da mesma **domínio de disponibilidade**, o que ajuda a manter a integridade e disponibilidade dos dados em caso de falhas de hardware.
 
-OCI Block Volumes are automatically replicated within an availability domain for high durability, ensuring data redundancy and protection against hardware failures.
+Os Volumes de Bloco da OCI são automaticamente replicados dentro de um domínio de disponibilidade para garantir alta durabilidade, garantindo redundância de dados e proteção contra falhas de hardware.
 
-## Auto-Tune Performance
+## Ajuste Automático de Performance
 
-Auto-Tune Performance helps you save on the costs. It changes the volume performance to lower cost when the volume is detached. When the volume is reattached, the volume performance is automatically adjusted to the previous setting.
+O **Ajuste Automático de Performance** ajuda a economizar nos custos. Ele altera a performance do volume para uma configuração de menor custo quando o volume é desanexado. Quando o volume é reanexado, a performance do volume é automaticamente ajustada para a configuração anterior.
 
-## Encryption
+## Criptografia
 
-Encryption is turned on by default (you cannot turn this off). OCI offers also *encryption in transit*, meaning when your virtual machine is talking to the block storage service, the traffic is encrypted in transit between the virtual machine and the block service.
+A criptografia é ativada por padrão (não é possível desativá-la). A OCI também oferece **criptografia em trânsito**, ou seja, quando sua máquina virtual se comunica com o serviço de armazenamento de blocos, o tráfego é criptografado enquanto está em trânsito entre a máquina virtual e o serviço de bloco.
 
-## Read/Write Shareable
+## Compartilhamento de Leitura/Gravação
 
-Block service offers **read/write shareable feature** where a single disk can be shared with multiple VMs and these VMs can read and write to the single block volume.
+O serviço de volume de bloco oferece a funcionalidade de **compartilhamento de leitura/gravação**, onde um único disco pode ser compartilhado com várias VMs e essas VMs podem ler e gravar no mesmo volume de bloco.
 
-## Resizing Block Volumes
+## Redimensionamento de Volumes de Bloco
 
-1. **off-line resizing**
-2. **on-line resizing**: you can expand the volume size without detaching the volume from an instance, so it keeps your applications up and running. 
+1. **Redimensionamento off-line**
+2. **Redimensionamento on-line**: você pode expandir o tamanho do volume sem desvinculá-lo de uma instância, mantendo suas aplicações em funcionamento.
 
-## (Asynchronous) Replication of Block Volumes
+## Replicação (Assíncrona) de Volumes de Bloco
 
-Block Volumes are being replicated from one region to another region. 
+Os Volumes de Bloco estão sendo replicados de uma região para outra.
 
-Scenarios:
-- disaster recovery
-- migration
-- business expansion
+Cenários:
+- Recuperação de desastres
+- Migração
+- Expansão de negócios
 
-##  Volume Groups
+## Grupos de Volumes
 
-Block Volume service provides you with the capability to group together multiple volumes in what we call as a volume group. This simplifies the process to create time consistent backups of running applications that span multiple volumes across multiple instances.
+O serviço de Volume de Bloco oferece a capacidade de agrupar múltiplos volumes em o que chamamos de **grupo de volumes**. Isso simplifica o processo de criar backups consistentes no tempo de aplicações em execução que abrangem múltiplos volumes em várias instâncias.

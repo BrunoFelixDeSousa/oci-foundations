@@ -1,38 +1,38 @@
-# Compute Introduction
+# Introdução ao Compute
 
-OCI Compute service provides you:
-- virtual machines
-- bare metal servers (full server completely dedicated to you)
-- dedicated host (a bare metal machine where you can run VMs)
+O serviço **OCI Compute** oferece:
+- Máquinas virtuais
+- Servidores bare metal (servidor completo dedicado a você)
+- Hosts dedicados (uma máquina bare metal onde você pode rodar VMs)
 
-The three defining characteristics of this service include:
-- scalability
-- high performance
-- lower pricing
+As três características definidoras desse serviço incluem:
+- **Escalabilidade**
+- **Alto desempenho**
+- **Preços mais baixos**
 
-## Flexible Shapes
+## Shapes Flexíveis
 
-Flexible Shapes means you have flexibility in choosing your own configuration. 
+**Shapes flexíveis** significa que você tem flexibilidade para escolher a configuração que deseja.
 
-You could choose:
-- Oracle Cloud Processor Units (OCPUs)
-- Memory
+Você pode escolher:
+- **Oracle Cloud Processor Units (OCPUs)**
+- **Memória**
 
-NOTE. The number of virtual NICs and physical NICs are not customizable parameters for flexible shape compute instances.
+**Nota**: O número de NICs virtuais e físicas não são parâmetros personalizáveis para instâncias de compute com shapes flexíveis.
 
-In the cloud, there's this notion of **T-shirt sizing**. So you have a small, medium, large kind of shapes, and your application has to fit those shapes. And sometimes you over provision or under provision, and you have to go through that painful process of changing your machine types. With flexible shapes, you don't have to do that.
+Na nuvem, existe o conceito de **T-shirt sizing**, ou tamanhos de camisas, onde você tem formas pequenas, médias e grandes, e seu aplicativo precisa se ajustar a essas formas. Às vezes, você acaba superdimensionando ou subdimensionando, e precisa passar pelo processo doloroso de mudar o tipo da sua máquina. Com shapes flexíveis, você não precisa fazer isso.
 
-## What's the difference between dedicated host and VMs?
+## Qual é a diferença entre Dedicated Host e VMs?
 
-VMs are shared and multi tenant, meaning the host can be running VMs from multiple customers. But some customers want a dedicated host where they could run their own VMs and they don't have VMs from any other customer running there. 
+As **VMs** são compartilhadas e multi-tenant, o que significa que o host pode estar rodando VMs de vários clientes. Já alguns clientes preferem um **dedicated host**, onde podem rodar suas próprias VMs, sem VMs de outros clientes sendo executadas ali.
 
-## Choice of Processors
+## Opções de Processadores
 
-OCI is only one of the two cloud providers to provide you options on processors:
-- AMD 
-- Intel 
-- Ampere (ARM-based processor)
+A OCI é uma das duas provedores de nuvem a oferecer opções de processadores:
+- **AMD**
+- **Intel**
+- **Ampere** (processador baseado em ARM)
 
-## Preemptable VMs 
+## VMs Preemptáveis
 
-Preemptable VMs are low cost short lived VMs suited for batch jobs and fault tolerant workloads. These are similar to regular instances, but price 50% lower. So you can use them to reduce your cost further.
+**VMs preemptáveis** são VMs de baixo custo e curta duração, adequadas para jobs em lote e cargas de trabalho tolerantes a falhas. Elas são semelhantes às instâncias regulares, mas com um custo 50% mais baixo. Você pode usá-las para reduzir ainda mais os custos.

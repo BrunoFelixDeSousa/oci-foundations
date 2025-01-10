@@ -1,23 +1,23 @@
-# Autonomous Database
+# Banco de Dados Autônomo
 
-Autonomous Database is a cloud database that uses machine learning to automate database tuning, security, backups, updates, and other routine management tasks, traditionally performed by DBAs.
+O **Banco de Dados Autônomo** é um banco de dados em nuvem que utiliza aprendizado de máquina para automatizar a afinação de banco de dados, segurança, backups, atualizações e outras tarefas rotineiras de gerenciamento, tradicionalmente realizadas por DBAs.
 
-So the idea is, as much as you can automate and let your users focus on differentiated higher level tasks, the better it is because they don't have to get involved with a lot of manual tasks and repetitive tasks. They don't have to do these because some of these tasks are also *error prone*. So using technologies like machine learning, we can take that out from the equation, let them focus on the value, additive, higher level differentiated tasks.
+A ideia é que, quanto mais você puder automatizar e deixar os usuários focados em tarefas diferenciadas e de maior nível, melhor. Isso porque eles não precisam se envolver com tarefas manuais e repetitivas, que também são *propensas a erros*. Usando tecnologias como aprendizado de máquina, podemos retirar essas tarefas da equação, permitindo que os usuários foquem nas tarefas de maior valor e mais estratégicas.
 
-The **self-driving feature** of Oracle Autonomous Database enables automatic database optimizations without manual intervention. It uses machine learning and automation to perform tasks such as provisioning, patching, tuning, and backup, which helps reduce the need for manual database administration and maintenance.
+A **função de auto-otimização** do Oracle Autonomous Database permite otimizações automáticas do banco de dados sem intervenção manual. Ele utiliza aprendizado de máquina e automação para realizar tarefas como provisionamento, patching, afinação e backup, o que ajuda a reduzir a necessidade de administração e manutenção manual do banco de dados.
 
-The **self-repairing feature** of Oracle Autonomous Database ensures automatic database recovery in case of failures. It detects and corrects issues in the database infrastructure, including hardware, software, and human errors, helping to maintain high availability and protect against data loss.
+A **função de auto-reparo** do Oracle Autonomous Database garante a recuperação automática do banco de dados em caso de falhas. Ele detecta e corrige problemas na infraestrutura do banco de dados, incluindo falhas de hardware, software e erros humanos, ajudando a manter alta disponibilidade e proteger contra perda de dados.
 
-The **self-securing feature** of Oracle Cloud Infrastructure Autonomous Database provides automatic application of security patches and protection from threats. It ensures that the database is always up-to-date with the latest security updates, helping to safeguard your data and maintain a strong security posture.
+A **função de auto-segurança** do Oracle Cloud Infrastructure Autonomous Database aplica automaticamente patches de segurança e protege contra ameaças. Ela garante que o banco de dados esteja sempre atualizado com as últimas atualizações de segurança, ajudando a proteger seus dados e manter uma postura de segurança robusta.
 
-Autonomous Database supports two database/workload types:
-1. **Autonomous Transaction Processing (ATP)**: this is for your OLTP,  so think about transactions. 
-2. **Autonomous Data Warehouse (ADW)**: this is for online analytical processing. 
+O Banco de Dados Autônomo suporta dois tipos de banco de dados/carga de trabalho:
+1. **Autonomous Transaction Processing (ATP)**: voltado para OLTP, ideal para transações.
+2. **Autonomous Data Warehouse (ADW)**: voltado para processamento analítico online (OLAP).
 
-![Autonomous Database](../images/autonomous_database.png)
+![Banco de Dados Autônomo](../images/autonomous_database.png)
 
-But there are two other workload types:
-1. **Autonomous JSON Database**: it is an ATP but designed for developing NoSQL-style applications that use the JSON documents
-2. **APEX Service**: it is geared towards developers who are building low code APEX applications
+Mas há outros dois tipos de carga de trabalho:
+1. **Autonomous JSON Database**: é um ATP projetado para o desenvolvimento de aplicações NoSQL que utilizam documentos JSON.
+2. **APEX Service**: voltado para desenvolvedores que constroem aplicações de baixo código (low-code) com APEX.
 
-![optimized_by_workload](../images/optimized_by_workload.png)
+![Otimizado por Carga de Trabalho](../images/optimized_by_workload.png)

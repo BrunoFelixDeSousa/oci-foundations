@@ -1,81 +1,83 @@
-# Object Storage
+# Armazenamento de Objetos
 
-OCI Object Storage characteristics:
-- internet-scale, high-performance storage platform
-- data is managed as objects
-- ideal for unstructured data
-- regional, public service
-- multiple storage tiers
-- private access from OCI resources (e.g. compute)
-- advanced capabilities
+Características do Armazenamento de Objetos OCI:
+- Plataforma de armazenamento de alto desempenho em escala de internet
+- Dados gerenciados como objetos
+- Ideal para dados não estruturados
+- Serviço público regional
+- Vários níveis de armazenamento
+- Acesso privado de recursos OCI (por exemplo, computação)
+- Capacidades avançadas
 
-OCI Object Storage scenarios:
-- content repository
-- unstructured and semi-structured data
-- big data scenario (Sparck, Hadoop, Data Analytics)
-- archive/backups
+Cenários de uso do Armazenamento de Objetos OCI:
+- Repositório de conteúdo
+- Dados não estruturados e semi-estruturados
+- Cenário de big data (Spark, Hadoop, Análise de Dados)
+- Arquivamento/Backups
 
-## How does it works ?
+## Como funciona?
 
-Anything you store in object storage is referenced as **object**. Think about object as *key-value pairs* or *name-value pairs*, name being the name of the file your storing and the value being the actual value of the file. And then objects can also have **object metadata** and you could define your own metadata there.
+Qualquer coisa que você armazene no armazenamento de objetos é referenciada como **objeto**. Pense em um objeto como *pares chave-valor* ou *pares nome-valor*, onde o nome é o nome do arquivo que você está armazenando e o valor é o valor real do arquivo. Além disso, os objetos também podem ter **metadados de objetos** e você pode definir seus próprios metadados ali.
 
-Objects are stored in a **bucket** and the buckets have your unique name within the tenancy. Important thing to keep in mind is there is a *flat hierarchy*. And anytime you see a folder structure, that's simulated by the object storage service by using something called *prefixes*.
+Os objetos são armazenados em um **bucket** e os buckets possuem um nome exclusivo dentro da tenência. Algo importante a se lembrar é que há uma *hierarquia plana*. E sempre que você vê uma estrutura de pastas, ela é simulada pelo serviço de armazenamento de objetos usando algo chamado *prefixos*.
 
-There's also something called **namespace**. Namespace is a logical entity. It's a top-level container for all buckets object. And it has to have a globally unique name.
+Também há algo chamado **namespace**. O namespace é uma entidade lógica. É um contêiner de nível superior para todos os buckets de objetos. Ele precisa ter um nome globalmente exclusivo.
 
-![Object Storage](../images/object_storage.png)
+![Armazenamento de Objetos](../images/object_storage.png)
 
-## Object Storage Tiers
+## Níveis de Armazenamento de Objetos
 
-1. **Standard Tier** (also called *Hot Tier*)
-    - critical data
-    - fast, immediate and frequent access
-    - most recent copy of the data
-    - instantaneous retrieval
-    - can't be downgraded
-2. **Infrequent Access** (also called *Cool Tier*)
-    - critical data
-    - ideal for data that you access infrequently (e.g. backups)
-    - storage cost lower than the Standard Storage Tier (60% cheaper)
-    - minimum retention required (31 days)
-    - retrieval fees
-3. **Archive Tier** (also called *Cold Tier*)
-    - seldom or rarely accessed data (e.g. tape storage)
-    - minimum retention required (90 days)
-    - objects need to be restored before download
-    - restore time: 1 hour
-    - download time: 24 hours
-    - archive bucket can't be upgraded
+1. **Padrão (Hot Tier)**:
+    - Dados críticos
+    - Acesso rápido, imediato e frequente
+    - Cópia mais recente dos dados
+    - Recuperação instantânea
+    - Não pode ser rebaixado
+
+2. **Acesso Infrequente (Cool Tier)**:
+    - Dados críticos
+    - Ideal para dados acessados de forma infrequente (por exemplo, backups)
+    - Custo de armazenamento mais baixo que o Nível de Armazenamento Padrão (60% mais barato)
+    - Retenção mínima exigida (31 dias)
+    - Taxas de recuperação
+
+3. **Arquivo (Cold Tier)**:
+    - Dados raramente acessados (por exemplo, armazenamento em fita)
+    - Retenção mínima exigida (90 dias)
+    - Objetos precisam ser restaurados antes do download
+    - Tempo de restauração: 1 hora
+    - Tempo de download: 24 horas
+    - Bucket de arquivo não pode ser atualizado
 
 ## Auto-Tiering
 
-There is a feature called **auto-tiering** that looks at your access pattern and can move the data from standard tier to infrequent access tier and vice-versa. 
+Existe uma funcionalidade chamada **auto-tiering** que observa seu padrão de acesso e pode mover os dados do nível padrão para o nível de acesso infrequente e vice-versa.
 
-## Lifecycle Management
+## Gerenciamento de Ciclo de Vida
 
-It helps you transition the data from higher cost tiers to the lower cost tiers. So you could say after 30 days, move my data from standard tiers to archive tiers, and delete them after 180 days. And you write a rule. And the service takes care of that.
+Ajuda a transitar os dados de níveis de custo mais altos para níveis de custo mais baixos. Você pode configurar, por exemplo, que após 30 dias, seus dados sejam movidos do nível padrão para o nível de arquivo, e excluídos após 180 dias. Você escreve uma regra e o serviço cuida disso.
 
-## Versioning
+## Versionamento
 
-You can also do versioning because as you are storing your data, you can have multiple versions of that data. And these objects are automatically versioned. You just specify that on the bucket and OCI take care of that.
+Você também pode fazer versionamento, pois ao armazenar seus dados, pode ter várias versões desses dados. Esses objetos são automaticamente versionados. Você só precisa especificar isso no bucket e a OCI cuida disso.
 
-## Data Encryption
+## Criptografia de Dados
 
-It's very important because you're storing sensitive data in the Cloud. So we give you data encryption **by default**. You cannot turn this off. You can always bring your own keys for very stringent requirements. You have that option.
+Isso é muito importante porque você está armazenando dados sensíveis na Nuvem. Por isso, fornecemos criptografia de dados **por padrão**. Você não pode desativá-la. No entanto, você pode sempre usar suas próprias chaves para requisitos mais rigorosos, se necessário.
 
-## Pre-Authenticated Request URL
+## URL de Solicitação Pré-Autenticada
 
-A pre-authenticated request URL is a feature in the OCI Object Storage service that provides temporary and secure access to a specific object. It enables users to generate a unique URL with a predefined expiration time, allowing external users to access the object without requiring authentication or authorization through OCI Identity and Access Management.
+Uma URL de solicitação pré-autenticada é um recurso no serviço de Armazenamento de Objetos OCI que fornece acesso temporário e seguro a um objeto específico. Ela permite que os usuários gerem uma URL única com um tempo de expiração predefinido, permitindo que usuários externos acessem o objeto sem necessidade de autenticação ou autorização por meio do OCI Identity and Access Management.
 
-## Access Data
+## Acesso aos Dados
 
-Object storage is a public service, you access them using a public **API endpoint**.
+O Armazenamento de Objetos é um serviço público, e você acessa os dados usando um **endpoint API** público.
 
-    https://<region>.oraclecloud.com/p/<token>/n/<namespace>/b/<bucket>/o/log.zip
+    https://<região>.oraclecloud.com/p/<token>/n/<namespace>/b/<bucket>/o/log.zip
 
-    /p = pre-authenticated request (optional)
+    /p = solicitação pré-autenticada (opcional)
     /n = namespace
     /b = bucket
-    /o = object  
+    /o = objeto  
 
-![Object Storage Resource](../images/object_storage_resource.png)
+![Recurso de Armazenamento de Objetos](../images/object_storage_resource.png)

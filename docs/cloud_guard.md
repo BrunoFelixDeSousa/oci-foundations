@@ -1,18 +1,18 @@
-#  Oracle Cloud Guard
+# Oracle Cloud Guard
 
-Cloud Guard is a service that falls under the category of *Cloud Security Posture Management*. It helps to monitor and identify potential security issues and then remediate them. What is really interesting about Cloud Guard is that it can completely automate the remediation.
+O **Cloud Guard** é um serviço que se enquadra na categoria de *Gerenciamento de Postura de Segurança na Nuvem*. Ele ajuda a monitorar e identificar problemas potenciais de segurança e, em seguida, corrigi-los. O que é realmente interessante sobre o **Cloud Guard** é que ele pode automatizar completamente a correção desses problemas.
 
-## How does it works ?
+## Como funciona?
 
-1. Targets: resources to be examined
-2. Detectors:  identified issues
-3. Problems: potential security issues
-4. Responders: corrective actions
+1. **Alvos**: recursos a serem examinados
+2. **Detectores**: problemas identificados
+3. **Problemas**: questões de segurança potenciais
+4. **Respondedores**: ações corretivas
 
 ![Cloud Guard](../images/cloud_guard.png)
 
-## Example Scenario
+## Cenário de Exemplo
 
-The scenario here is a public bucket, and you don't want this bucket to be public. You want this to be a private bucket because that aligns with your security posture.
+O cenário aqui é um **bucket público**, e você não quer que este bucket seja público. Você deseja que ele seja um **bucket privado**, pois isso está alinhado com a sua postura de segurança.
 
-![Public Bucket Scenario](../images/public_bucket_scenario.png)
+![Cenário do Bucket Público](../images/public_bucket_scenario.png)

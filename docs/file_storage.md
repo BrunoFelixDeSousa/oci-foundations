@@ -1,20 +1,20 @@
-# File Storage
+# Armazenamento de Arquivos
 
-File storage is hierarchical collection of documents organized into name directories.
+O armazenamento de arquivos é uma coleção hierárquica de documentos organizados em diretórios nomeados.
 
-The OCI File Storage service uses the Network File System (NFS) protocol for file access. NFS allows clients to access files over a network in a manner that appears as though they are part of the local file system.
+O serviço de Armazenamento de Arquivos da OCI utiliza o protocolo NFS (Network File System) para acesso a arquivos. O NFS permite que os clientes acessem arquivos por meio de uma rede de maneira que pareça que eles fazem parte do sistema de arquivos local.
 
-The two most common distributed file systems are:
-- network file system (NFS) for Linux
-- server messaging block (SMB) for Windows
+Os dois sistemas de arquivos distribuídos mais comuns são:
+- NFS (Network File System) para Linux
+- SMB (Server Message Block) para Windows
 
-Both the protocols and the standards are supported by Unix and Windows.
+Ambos os protocolos e os padrões são suportados pelo Unix e pelo Windows.
 
-File Storage Use Cases:
+Casos de Uso do Armazenamento de Arquivos:
 - EBS (E-Business Suite)
-- General Purpose File Systems
-- Microservices and Containers
-- HPCs scale-out apps
-- Analytics
+- Sistemas de Arquivos de Propósito Geral
+- Microsserviços e Contêineres
+- Aplicações de HPC (High-Performance Computing) em escala
+- Análises
 
-![OCI File Storage Service](../images/file_storage.png)
+![Serviço de Armazenamento de Arquivos OCI](../images/file_storage.png)

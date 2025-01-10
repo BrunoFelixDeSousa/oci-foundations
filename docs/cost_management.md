@@ -1,18 +1,17 @@
-# Cost Management
+# Gerenciamento de Custos
 
-OCI provides different tools to manage costs.
+A OCI oferece diferentes ferramentas para gerenciar custos.
 
-The first tool are **OCI Budgets**. You can use budgets to track costs in your tenancy. After creating a budget for a compartment, you can set up alerts that will notify you if a budget is forecast to be exceeded or if spending surpasses a certain amount. 
+A primeira ferramenta são os **Orçamentos OCI**. Você pode usar orçamentos para acompanhar os custos na sua tenancy. Após criar um orçamento para um compartimento, você pode configurar alertas que irão notificá-lo se o orçamento estiver previsto para ser excedido ou se o gasto ultrapassar um valor específico.
 
-The second tool is **Cost Analysis**. You could analyze your cost after you have spent it, but it's a nice way to look at your past cost and then make changes for the future. If there are elements you want to change, this is a great way to do that.
+A segunda ferramenta é a **Análise de Custos**. Você pode analisar seus custos após tê-los gasto, mas é uma boa maneira de olhar para os custos passados e fazer mudanças para o futuro. Se houver elementos que você deseja mudar, essa é uma ótima maneira de fazer isso.
 
-There are also **Usage reports**. Today, currently the Usage Reports get downloaded in form of these CSV files, and these are generated daily. And they show usage data for each resource in your tenancy. The CSV files are stored in an object storage bucket that is accessible using a cross-tenancy policy, so you could look across not just your tenancy, you could look across multiple tenancies if there are multiple tenancies being used.
+Também existem **Relatórios de Uso**. Atualmente, os Relatórios de Uso são baixados na forma desses arquivos CSV, e são gerados diariamente. Eles mostram os dados de uso para cada recurso na sua tenancy. Os arquivos CSV são armazenados em um bucket de armazenamento de objetos acessível usando uma política de cross-tenancy, para que você possa olhar não apenas para a sua tenancy, mas também para várias tenancies, caso múltiplas tenancies estejam sendo usadas.
 
-There are also **Service Limits**, the tool to set your limits, quota, and usage. So as with any Cloud, OCI limits how many resources you can run in a traditional tenancy to prevent things like fraud and misuse. If you are using compartments, you have ability to set up **Compartment Quotas**.  
+Há também **Limites de Serviço**, a ferramenta para definir seus limites, cotas e uso. Assim como em qualquer nuvem, a OCI limita quantos recursos você pode executar em uma tenancy tradicional para evitar problemas como fraudes e abusos. Se você estiver usando compartimentos, tem a capacidade de configurar **Cotas de Compartimento**.
 
-## Notes
+## Notas
 
-In Oracle Cloud Infrastructure, you can set up email alerts to receive notifications when budget thresholds are reached. These alerts help customers stay informed about their spending and take appropriate actions to manage their costs.
+Na Oracle Cloud Infrastructure, você pode configurar alertas por e-mail para receber notificações quando os limites do orçamento forem atingidos. Esses alertas ajudam os clientes a se manterem informados sobre seus gastos e a tomarem ações adequadas para gerenciar seus custos.
 
-Service limits are the upper bounds placed by Oracle on the number of resources you can create in a region or tenancy, while compartment quotas are the upper bounds defined by the users for resource usage within specific compartments. The distinction is that service limits are set by Oracle and apply to a tenancy in a region, while compartment quotas are set by the users and apply to specific compartments.
-
+Os limites de serviço são os limites máximos definidos pela Oracle para o número de recursos que você pode criar em uma região ou tenancy, enquanto as cotas de compartimento são os limites máximos definidos pelos usuários para o uso de recursos dentro de compartimentos específicos. A diferença é que os limites de serviço são definidos pela Oracle e se aplicam a uma tenancy em uma região, enquanto as cotas de compartimento são definidas pelos usuários e se aplicam a compartimentos específicos.

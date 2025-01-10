@@ -1,44 +1,43 @@
 # Oracle Container Engine for Kubernetes (OKE)
 
-VMs :
-- higher utilization of the underlying resources
-- higher disk space 
-- longer boot time
+VMs:
+- Maior utilização dos recursos subjacentes
+- Maior espaço em disco
+- Maior tempo de inicialização
 
 Containers:
-- faster boot time
-- lightweight
-- **portable** (main reason)
+- Tempo de inicialização mais rápido
+- Leves
+- **Portáteis** (principal razão)
 
+![Diferenças entre VMs e Containers](../images/vms_vs_containers.png)
 
-![Differences between VMs and containers](../images/vms_vs_containers.png)
+## Orquestração de Containers
 
-## Container Orchestration 
+**Docker** é usado para gerenciar e criar os containers.
 
-**Docker** is used to manage and build the containers.
+**Kubernetes** é um sistema open-source para automatizar a implantação, escalonamento e gerenciamento de aplicativos conteinerizados.
 
-**Kubernetes** is an open source system for automating deployment, scaling, and management of containerized application.
+Quais são algumas das vantagens?
 
-What are some of the advantages? 
-
-1. you can run containerized applications of **any scale** with no downtime
-2. you can **self-heal** applications, thereby providing resiliency
-3. you can **auto-scale** containerized applications, ensure optimal utilization
-4. greatly **simplifies deployment** to a large extent.
+1. Você pode executar aplicativos conteinerizados de **qualquer escala** sem tempo de inatividade.
+2. Você pode **auto-recuperar** aplicativos, proporcionando resiliência.
+3. Você pode **auto-escalar** aplicativos conteinerizados, garantindo a utilização ideal.
+4. **Simplifica significativamente a implantação** em grande escala.
 
 ## OKE
 
-**OKE** is a fully managed, scalable, and highly available Kubernetes service. It's based on the open source Kubernetes system. It has a lot of features for developers like one click cluster creation, CLI API support, and then support for running these on ARM-based and GPU-based instances.
+**OKE** é um serviço Kubernetes totalmente gerenciado, escalável e altamente disponível. Ele é baseado no sistema open-source Kubernetes. Possui muitos recursos para desenvolvedores, como criação de clusters com um clique, suporte a API CLI e suporte para execução em instâncias baseadas em ARM e GPU.
 
-![Components of a Cluster](../images/oke.png)
+![Componentes de um Cluster](../images/oke.png)
 
-When creating a new cluster with OKE, you can specify the type of cluster to create. So there are two types of clusters:
-1. **enhanced clusters**: they support all available features and come with a financially backed SLA.
-2. **basic clusters**: they support core functionality, but none of the enhanced features. They come with a financial  Service Level Objective (SLO), but not a financially backed SLA like the enhanced cluster. 
+Ao criar um novo cluster com o OKE, você pode especificar o tipo de cluster a ser criado. Existem dois tipos de clusters:
+1. **Clusters aprimorados**: eles oferecem todos os recursos disponíveis e vêm com um SLA financeiro respaldado.
+2. **Clusters básicos**: eles oferecem funcionalidades essenciais, mas sem os recursos aprimorados. Eles têm um Objetivo de Nível de Serviço (SLO) financeiro, mas não um SLA respaldado financeiramente como o cluster aprimorado.
 
-When creating a node pool for your Kubernetes cluster, you also have two options:
+Ao criar um pool de nós para o seu cluster Kubernetes, você também tem duas opções:
 
-1. to create a **virtual node**: the Kubernetes software is upgraded, security patches are applied while respecting application availability requirements. But it's done by Oracle. You can only create virtual nodes and virtual node pools in enhanced clusters.
-2. to create a **managed node**: you are responsible for managing the nodes, upgrading Kubernetes on managed nodes and for managing cluster capacity. And unlike virtual nodes, you can also create managed nodes in basic clusters, as well as enhanced clusters.
+1. Criar um **nó virtual**: o software Kubernetes é atualizado, os patches de segurança são aplicados respeitando os requisitos de disponibilidade de aplicativos, mas isso é feito pela Oracle. Você só pode criar nós virtuais e pools de nós virtuais em clusters aprimorados.
+2. Criar um **nó gerenciado**: você é responsável por gerenciar os nós, atualizar o Kubernetes nos nós gerenciados e gerenciar a capacidade do cluster. Ao contrário dos nós virtuais, você também pode criar nós gerenciados em clusters básicos, bem como em clusters aprimorados.
 
-![Type of cluster nodes](../images/cluster_nodes.png)
+![Tipos de nós de cluster](../images/cluster_nodes.png)

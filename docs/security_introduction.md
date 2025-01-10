@@ -1,23 +1,22 @@
-# Security Introduction
+# Introdução à Segurança
 
-In an on-premises environment, you own the whole stack and you are responsible for security end-to-end. In a **shared security model** some of the responsibilities transfer to the Cloud provider.
+Em um ambiente local (on-premises), você possui toda a infraestrutura e é responsável pela segurança de ponta a ponta. No modelo de **segurança compartilhada**, algumas responsabilidades são transferidas para o provedor de nuvem.
 
-In the OCI shared security responsibility model, Oracle is responsible for securing the underlying cloud infrastructure. This includes securing the physical data centers, network infrastructure, and hardware that support the cloud services, ensuring a secure and reliable environment for customers to deploy their applications and store data.
+No modelo de responsabilidade compartilhada da OCI, a Oracle é responsável por proteger a infraestrutura subjacente da nuvem. Isso inclui a segurança dos data centers físicos, infraestrutura de rede e hardware que suportam os serviços de nuvem, garantindo um ambiente seguro e confiável para os clientes implantarem suas aplicações e armazenarem dados.
 
- In the OCI shared security responsibility model, the customer is responsible for securing their data, applications, and access control. This includes implementing appropriate security measures such as encryption, user access control, and monitoring to protect sensitive data and ensure the overall security of their cloud environment.
+No modelo de responsabilidade compartilhada da OCI, o cliente é responsável por proteger seus dados, aplicações e controle de acesso. Isso envolve a implementação de medidas de segurança adequadas, como criptografia, controle de acesso de usuários e monitoramento, para proteger dados sensíveis e garantir a segurança geral do ambiente na nuvem.
 
-![Shared Secuirty Model](../images/shared_security_model.png)
+![Modelo de Segurança Compartilhada](../images/shared_security_model.png)
 
-## Security Services
+## Serviços de Segurança
 
-Security is not just one service or an add-on. 
+A segurança não é apenas um serviço ou um complemento.
 
-Security is enforced at different layers of the stack:
-- infrastracture protection
-- identity and access management
-- OS and workload protection
-- data protection
-- detection and remediation
+A segurança é aplicada em diferentes camadas da pilha:
+- Proteção da infraestrutura
+- Gerenciamento de identidade e acesso
+- Proteção do sistema operacional e das cargas de trabalho
+- Proteção de dados
+- Detecção e remediação
 
-![Security Services](../images/security_services.png)
-
+![Serviços de Segurança](../images/security_services.png)
