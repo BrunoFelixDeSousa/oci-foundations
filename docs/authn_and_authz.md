@@ -28,6 +28,37 @@ No OCI, a autorização é gerenciada por meio de **políticas**. Estas são dec
 
 > **Nota:** Tudo é negado por padrão no OCI.
 
+### **Exemplo Visual: Autenticação e Autorização no OCI**
+Aqui está um diagrama que descreve como a autenticação (AuthN) e a autorização (AuthZ) funcionam no Oracle Cloud Infrastructure:
+```mermaid
+graph TD
+    subgraph Autenticação AuthN
+        A[Principal: Usuário IAM]
+        B[Principal: Recurso Ex.: Instância Compute]
+        C[Métodos de Autenticação]
+        A -->|Nome de usuário e senha| C
+        A -->|Chaves de assinatura de API| C
+        A -->|Tokens de autenticação| C
+        B -->|Credenciais geradas| C
+    end
+
+    subgraph Autenticação AuthZ
+        D[Políticas IAM]
+        E[Declarações de Política]
+        F[Permissões Granulares]
+        G[Compartimentos]
+        H[Tenancy]
+        D --> E
+        E -->|Definem permissões| F
+        F -->|Ações: inspect, read, use, manage| G
+        F -->|Ações: inspect, read, use, manage| H
+    end
+
+    C -->|Usuário autenticado| D
+    D -->|Política associada| F
+
+```
+
 ### Exemplo de Declaração de Política
 
 ```text
