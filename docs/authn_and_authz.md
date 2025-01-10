@@ -1,45 +1,64 @@
-# AuthN and AuthZ
+# Autenticação e Autorização no OCI
 
-A **principal** is an IAM entity that is allowed to interact with OCI resources. 
+No Oracle Cloud Infrastructure (OCI), um **principal** é uma entidade de IAM que tem permissão para interagir com recursos. Existem dois tipos principais de principais:
 
-There are two kinds of principals primarily in OCI:
-- IAM Users
-- Principal Resources
+1. **IAM Users** (Usuários criados no IAM).  
+2. **Principal Resources** (recursos que agem como entidades, como instâncias de computação).
 
-## Authentication (AuthN)
+---
 
-Authentication is basically figuring out: are you who you say you are? 
+## **Autenticação (AuthN)**
 
-There are different ways to do authentication:
-- username and password
-- API signing keys
-- auth tokens
+Autenticação responde à pergunta: **"Você é quem diz ser?"**
 
-## Authorization (AuthZ)
+Métodos comuns de autenticação no OCI incluem:
+- Nome de usuário e senha.
+- Chaves de assinatura de API.
+- Tokens de autenticação.
 
-Authorization deals with permissions and figuring out what permissions do you have.
+---
 
-In OCI, authorization is done through what we call as **policies**. Policies are human readable statements to define granular permissions. Policies can be attached to a compartment, or they could be attached to a tenancy. 
+## **Autorização (AuthZ)**
 
-NOTE. Everything is denied by default.
+Autorização determina: **"O que você está autorizado a fazer?"**
 
-E.g.
+No OCI, a autorização é gerenciada por meio de **políticas**. Estas são declarações legíveis para humanos que definem permissões granulares. As políticas podem ser vinculadas a um compartimento ou à tenancy.
 
-    Allow group <group_name> to <verb> <resource_type> in <location> [where <conditions>]
+> **Nota:** Tudo é negado por padrão no OCI.
 
-## IAM Policy Statement
+### Exemplo de Declaração de Política
 
-An IAM policy statement in Oracle Cloud Infrastructure typically consists of these components: 
-1. Location (compartment or tenancy)
-2. Action Verb (the specific action to be allowed)
-3. Resource (the resources the action can be performed on)
-4. Principal (group the policy applies to)
-5. Conditions (optional)
+```text
+Allow group <group_name> to <verb> <resource_type> in <location> [where <conditions>]
+```
 
-### Policies Verbs
+---
 
-![Policies Verbs](../images/policies_verbs.png)
+## **Componentes de uma Declaração de Política IAM**
 
-### Policies Resource Types
+1. **Localização:** define onde a política se aplica (compartimento ou tenancy).  
+2. **Ação:** o verbo específico que permite a ação (e.g., `inspect`, `read`, `use`, `manage`).  
+3. **Recurso:** o tipo de recurso em que a ação pode ser realizada.  
+4. **Principal:** o grupo ao qual a política se aplica.  
+5. **Condições:** condições opcionais para restringir a política.
 
-![Policies Resource Types](../images/policies_resource_types.png)
+---
+
+### **Verbos das Políticas**
+
+Os verbos das políticas determinam o nível de controle:
+- `inspect`: visualização básica de informações do recurso.
+- `read`: visualização mais detalhada do recurso.
+- `use`: permite operações limitadas no recurso.
+- `manage`: acesso completo, incluindo criação e exclusão.
+
+![Verbos das Políticas](../images/policies_verbs.png)
+
+---
+
+### **Tipos de Recursos nas Políticas**
+
+Cada política especifica os tipos de recursos aos quais ela se aplica:
+- Exemplo: `instance`, `volume`, `vcn`, `bucket`.
+
+![Tipos de Recursos](../images/policies_resource_types.png)
