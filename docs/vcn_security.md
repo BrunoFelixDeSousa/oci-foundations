@@ -1,3 +1,5 @@
+[⬅️ Voltar para o README](../README.md)
+
 # VCN Security
 
 A segurança da **Virtual Cloud Network (VCN)** no Oracle Cloud Infrastructure (OCI) é gerenciada por meio de **Security Lists** e **Network Security Groups (NSGs)**. Esses componentes oferecem controle sobre o tráfego de rede, funcionando como firewalls para proteger os recursos dentro de uma VCN.

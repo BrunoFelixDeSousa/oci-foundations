@@ -1,3 +1,5 @@
+[⬅️ Voltar para o README](../README.md)
+
 # Balanceador de Carga
 
 Um **Balanceador de Carga** permite que você obtenha *alta disponibilidade* e *alta escalabilidade*. Eles também são conhecidos como **Proxy Reverso**.

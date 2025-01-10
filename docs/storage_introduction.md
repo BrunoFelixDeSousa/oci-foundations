@@ -1,3 +1,5 @@
+[⬅️ Voltar para o README](../README.md)
+
 # Introdução ao Armazenamento
 
 **Requisitos de Armazenamento:**

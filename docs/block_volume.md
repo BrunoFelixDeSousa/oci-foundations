@@ -1,3 +1,5 @@
+[⬅️ Voltar para o README](../README.md)
+
 # Volume de Bloco
 
 O serviço de **Volume de Bloco** fornece armazenamento persistente e durável para instâncias de computação. Os dados são armazenados de forma independente do ciclo de vida da instância. "Durável" significa que fazemos múltiplas cópias. Assim, mesmo que uma cópia seja perdida, temos outras cópias dos dados disponíveis no data center.

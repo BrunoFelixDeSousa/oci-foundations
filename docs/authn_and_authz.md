@@ -1,3 +1,5 @@
+[⬅️ Voltar para o README](../README.md)
+
 # Autenticação e Autorização no OCI
 
 No Oracle Cloud Infrastructure (OCI), um **principal** é uma entidade de IAM que tem permissão para interagir com recursos. Existem dois tipos principais de principais:

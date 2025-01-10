@@ -1,3 +1,5 @@
+[⬅️ Voltar para o README](../README.md)
+
 # Serviço de Banco de Dados MySQL na Nuvem
 
 As duas principais características definidoras do Serviço de Banco de Dados MySQL na Nuvem são o recurso de **alta disponibilidade**, que você deve definitivamente usar em produção, e o **HeatWave**, que permite realizar transações OLAP e OLTP usando o Serviço de Banco de Dados MySQL na Nuvem.

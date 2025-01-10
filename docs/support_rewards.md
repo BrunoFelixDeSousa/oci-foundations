@@ -1,3 +1,5 @@
+[⬅️ Voltar para o README](../README.md)
+
 # Oracle Support Rewards
 
 **Oracle Support Rewards** é um programa que oferece valor adicional aos clientes que utilizam serviços de OCI e, ao mesmo tempo, têm licenças de software Oracle em seus ambientes on-premises. 

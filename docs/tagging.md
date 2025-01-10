@@ -1,3 +1,5 @@
+[⬅️ Voltar para o README](../README.md)
+
 # Tagging in OCI
 
 Tags are key-value pairs used to better organize and manage your resources in Oracle Cloud Infrastructure (OCI). They offer several benefits, such as:

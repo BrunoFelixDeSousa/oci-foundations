@@ -1,3 +1,5 @@
+[⬅️ Voltar para o README](../README.md)
+
 # Oracle Functions
 
 Uma das maiores vantagens do FaaS (Function as a Service) é que ele realmente leva você a um modelo de precificação baseado no *uso*, onde você é cobrado apenas pelo tempo em que sua função está em execução.

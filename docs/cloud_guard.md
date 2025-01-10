@@ -1,3 +1,5 @@
+[⬅️ Voltar para o README](../README.md)
+
 # Oracle Cloud Guard
 
 O **Cloud Guard** é um serviço que se enquadra na categoria de *Gerenciamento de Postura de Segurança na Nuvem*. Ele ajuda a monitorar e identificar problemas potenciais de segurança e, em seguida, corrigi-los. O que é realmente interessante sobre o **Cloud Guard** é que ele pode automatizar completamente a correção desses problemas.

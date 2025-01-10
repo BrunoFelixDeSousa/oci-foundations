@@ -1,3 +1,5 @@
+[⬅️ Voltar para o README](../README.md)
+
 # Compartimentos no Oracle Cloud Infrastructure (OCI)
 
 Ao abrir uma conta no OCI, você recebe uma **tenancy** (nome sofisticado para conta) e um **compartimento raiz**.

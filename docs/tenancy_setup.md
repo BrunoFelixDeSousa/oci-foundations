@@ -1,3 +1,5 @@
+[⬅️ Voltar para o README](../README.md)
+
 # Configuração de Tenancy no OCI
 
 O administrador da tenancy é responsável por criar a conta no Oracle Cloud Infrastructure (OCI) e gerenciar suas operações. No entanto, **as melhores práticas sugerem limitar o uso do administrador da tenancy apenas para tarefas essenciais e configurar administradores dedicados para operações diárias**.

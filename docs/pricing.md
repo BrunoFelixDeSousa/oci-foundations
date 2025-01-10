@@ -1,3 +1,5 @@
+[⬅️ Voltar para o README](../README.md)
+
 # Preços
 
 O modelo de preços da Oracle é simples, transparente e mais barato que os concorrentes.

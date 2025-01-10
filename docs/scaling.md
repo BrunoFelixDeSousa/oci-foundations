@@ -1,3 +1,5 @@
+[⬅️ Voltar para o README](../README.md)
+
 # Escalabilidade
 
 Existem dois tipos de escalabilidade:

@@ -1,3 +1,5 @@
+[⬅️ Voltar para o README](../README.md)
+
 # Noções Básicas de Criptografia
 
 A criptografia é usada para transformar dados em texto simples em texto cifrado (também referido como texto criptografado).

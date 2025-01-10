@@ -1,3 +1,5 @@
+[⬅️ Voltar para o README](../README.md)
+
 # Armazenamento de Arquivos
 
 O armazenamento de arquivos é uma coleção hierárquica de documentos organizados em diretórios nomeados.

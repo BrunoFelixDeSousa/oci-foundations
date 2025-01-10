@@ -1,3 +1,5 @@
+[⬅️ Voltar para o README](../README.md)
+
 # Nuvem Distribuída da Oracle
 
 Os clientes podem acessar os serviços da Oracle por meio de:

@@ -1,3 +1,5 @@
+[⬅️ Voltar para o README](../README.md)
+
 # Oracle Cloud Shell
 
 O **Cloud Shell** é uma pequena máquina virtual executando um shell Linux, que você acessa diretamente através do navegador no **Console OCI**. Ele vem com o **OCI CLI** pré-autenticado e várias utilidades como Git, Java, Python, etc.

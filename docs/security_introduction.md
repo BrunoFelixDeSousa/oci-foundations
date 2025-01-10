@@ -1,3 +1,5 @@
+[⬅️ Voltar para o README](../README.md)
+
 # Introdução à Segurança
 
 Em um ambiente local (on-premises), você possui toda a infraestrutura e é responsável pela segurança de ponta a ponta. No modelo de **segurança compartilhada**, algumas responsabilidades são transferidas para o provedor de nuvem.
